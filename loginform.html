@@ -10,16 +10,31 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         <div class="container">
             <div class="login-box">
                 <h2>LOGIN</h2>
+                <form id="loginForm">
                 <div class="input-box">
                     <i class="fa fa-user"></i>
-                    <input type="text" placeholder="Type your username">
+                    <input type="text" id="username" placeholder="Type your username">
                 </div>
+
+                <div class="input-box">
+                    <i class="fa fa-user"></i>
+                    <input type="text" id="email" placeholder="Enter your mail">
+                    <small id="emailError" class="error"></small>
+                </div>
+
                 <div class="input-box">
                     <i class="fa fa-lock"></i>
-                    <input type="text" placeholder="Type your password">
+                    <input type="password" id="password" placeholder="Type your password">
+                    <small id="passwordError" class="error"></small>
                 </div>
+
                 <p class="forgot">Forgot password?</p>
-                <button class="login-btn">LOGIN</button>
+
+                <button type="submit" class="login-btn">LOGIN</button>
+
+                <p id="resultMessage"></p>
+                </form>
+
                 <p class="social-text">Or Sign up using</p>
                 <div class="social-icons">
                     <i class="fab fa-facebook-f"></i>
@@ -30,5 +45,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
                 <a href="#" class="signup">SIGN UP</a>
             </div>
         </div>
+        <script src="loginform.js"></script>
     </body>
 </html>
